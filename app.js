@@ -1,7 +1,7 @@
 const menu = [
   {
     id: 1,
-    title: "Buttermilk Panc: Pancakes",
+    title: "Buttermilk  Pancakes",
     category: "Breakfast",
     price: 15.99,
     img: "./images/item-1.jpg",
@@ -12,7 +12,7 @@ const menu = [
     title: "Eggs Benedict",
     category: "Breakfast",
     price: 10.99,
-    img: "./images/item-2.jpg",
+    img: "./images/Egg-Benedict-2-728x1091.jpg",
     description:
       "Poached eggs served on English muffins with ham and hollandaise sauce",
   },
@@ -21,7 +21,7 @@ const menu = [
     title: "Chicken Caesar Salad",
     category: "Lunch",
     price: 12.99,
-    img: "./images/item-3.jpg",
+    img: "./images/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
     description:
       "Grilled chicken served on romaine lettuce with Caesar dressing",
   },
@@ -30,7 +30,7 @@ const menu = [
     title: "Beef Burger",
     category: "Lunch",
     price: 14.99,
-    img: "./images/item-4.jpg",
+    img: "./images/Homemade-Beef-Burgers-4.webp",
     description: "Juicy beef burger served with fries and a pickle",
   },
   {
@@ -38,7 +38,7 @@ const menu = [
     title: "Margherita Pizza",
     category: "Dinner",
     price: 16.99,
-    img: "./images/item-5.jpg",
+    img: "./images/margherita-pizza-recipe-1-2-548x824.jpg",
     description: "Classic pizza with tomato sauce, mozzarella, and fresh basil",
   },
   {
@@ -46,7 +46,7 @@ const menu = [
     title: "Spaghetti Carbonara",
     category: "Dinner",
     price: 13.99,
-    img: "./images/item-6.jpg",
+    img: "./images/creamy-carbonara-1.jpg",
     description: "Spaghetti with creamy egg sauce, pancetta, and Parmesan",
   },
   {
@@ -54,7 +54,7 @@ const menu = [
     title: "Apple Pie",
     category: "Dessert",
     price: 7.99,
-    img: "./images/item-7.jpg",
+    img: "./images/best-apple-pie-from-scratch-728x971.webp",
     description: "Warm apple pie served with a scoop of vanilla ice cream",
   },
   {
@@ -62,7 +62,7 @@ const menu = [
     title: "Chocolate Cake",
     category: "Dessert",
     price: 8.99,
-    img: "./images/item-8.jpg",
+    img: "./images/triple-chocolate-cake-4-850x1276.jpg",
     description: "Rich chocolate cake served with whipped cream",
   },
   {
@@ -70,7 +70,7 @@ const menu = [
     title: "Caesar Salad",
     category: "Salad",
     price: 8.99,
-    img: "./images/item-9.jpg",
+    img: "./images/Caesar-Salad-24.jpg",
     description: "Romaine lettuce with Caesar dressing, croutons and Parmesan",
   },
   {
@@ -78,7 +78,7 @@ const menu = [
     title: "Greek Salad",
     category: "Salad",
     price: 9.99,
-    img: "./images/item-10.jpg",
+    img: "./images/Greek-Salad-Recipe-Easy-768x1152.jpg",
     description:
       "Fresh salad with tomatoes, cucumbers, olives, feta, and Greek dressing",
   },
@@ -87,7 +87,7 @@ const menu = [
     title: "French Toast",
     category: "Breakfast",
     price: 11.99,
-    img: "./images/item-11.jpg",
+    img: "./images/french.jpg",
     description: "Sweet French toast served with maple syrup and fresh berries",
   },
   {
@@ -104,7 +104,7 @@ const menu = [
     title: "Chicken Alfredo",
     category: "Dinner",
     price: 14.99,
-    img: "./images/item-13.jpg",
+    img: "./images/Chicken-Alfredo-blog-4-768x1024.jpg",
     description:
       "Creamy pasta with grilled chicken, Parmesan, and fresh parsley",
   },
@@ -113,7 +113,7 @@ const menu = [
     title: "Cheesecake",
     category: "Dessert",
     price: 7.99,
-    img: "./images/item-14.jpg",
+    img: "./images/cheesecake-1-22-730x913.jpg",
     description: "Creamy cheesecake served with a sweet strawberry sauce",
   },
   {
@@ -121,7 +121,7 @@ const menu = [
     title: "Cobb Salad",
     category: "Salad",
     price: 9.99,
-    img: "./images/item-15.jpg",
+    img: "./images/Cobb-Salad_0.jpg",
     description:
       "Mixed greens with chicken, bacon, avocado, blue cheese, and hard-boiled egg",
   },
@@ -130,7 +130,7 @@ const menu = [
     title: "Omelette",
     category: "Breakfast",
     price: 10.99,
-    img: "./images/item-16.jpg",
+    img: "./images/best-omelette-recipe-1.jpg",
     description:
       "Fluffy omelette with your choice of fillings, served with toast",
   },
@@ -139,7 +139,7 @@ const menu = [
     title: "Fish and Chips",
     category: "Lunch",
     price: 13.99,
-    img: "./images/item-17.jpg",
+    img: "./images/SteakFrites_14.jpg",
     description: "Crispy fried fish served with chips and tartar sauce",
   },
   {
@@ -147,7 +147,7 @@ const menu = [
     title: "Steak Frites",
     category: "Dinner",
     price: 21.99,
-    img: "./images/item-18.jpg",
+    img: "./images/IMG_9513-scaled.jpg",
     description: "Grilled steak served with fries and a side salad",
   },
   {
@@ -155,7 +155,7 @@ const menu = [
     title: "Tiramisu",
     category: "Dessert",
     price: 8.99,
-    img: "./images/item-19.jpg",
+    img: "./images/best-tiramisu-recipe-SQUARE.jpg",
     description:
       "Classic Italian dessert with espresso-soaked ladyfingers and mascarpone cream",
   },
@@ -164,8 +164,34 @@ const menu = [
     title: "Caprese Salad",
     category: "Salad",
     price: 8.99,
-    img: "./images/item-20.jpg",
+    img: "./images/072810_1.jpg",
     description:
       "Fresh mozzarella, tomatoes, and basil, drizzled with balsamic reduction",
   },
 ];
+
+const menuContainer = document.querySelector(".menuContainer");
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayMenu = menu.map((item) => {
+    return `<div class="item">
+    <div class="image">
+      <img src=${item.img}   alt="${item.title}  " />
+    </div>
+    <div class="text">
+      <div class="price">
+        <h4> ${item.title} </h4>
+        <h4> ${item.price} </h4>
+      </div>
+     <hr class="ligne">
+      <div class="description">
+        <p>
+         ${item.description}
+        </p>
+      </div>
+    </div>
+  </div>`;
+  });
+  displayMenu = displayMenu.join("");
+  menuContainer.innerHTML=displayMenu;
+});

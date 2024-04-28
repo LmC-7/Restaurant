@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
   width: 100vw;
   height: 100vh;
 }
@@ -27,7 +26,6 @@
 .mainContainer .mainTitle .buttons {
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgb(0, 30, 255);
 }
 .mainContainer .mainTitle .buttons button {
   padding: 7px;
@@ -41,19 +39,17 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border: 1px solid green;
   width: 95%;
   height: 79%;
 }
 .mainContainer .menuContainer .item {
+  margin: 20px;
   display: flex;
-  width: 48%;
+  width: 38%;
   height: 30%;
-  border: 1px solid green;
 }
 .mainContainer .menuContainer .item .image {
-  border: 1px solid rgb(128, 0, 102);
-  width: 85%;
+  width: 50%;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -63,6 +59,7 @@
   height: 100%;
 }
 .mainContainer .menuContainer .item .text {
+  margin-left: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
