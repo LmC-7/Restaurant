@@ -17,11 +17,11 @@
   flex-direction: column;
   height: 19%;
   justify-content: space-between;
-  border: 1px blue solid;
 }
 .mainContainer .mainTitle h1 {
   height: 50%;
   font-size: 70px;
+  color: rgb(254, 176, 33);
 }
 .mainContainer .mainTitle .buttons {
   display: flex;
@@ -29,9 +29,11 @@
 }
 .mainContainer .mainTitle .buttons button {
   padding: 7px;
+  border-radius: 7px;
+  border: 1px solid rgb(254, 176, 33);
 }
 .mainContainer .mainTitle .buttons button:hover {
-  background-color: rgb(0, 208, 255);
+  background-color: rgb(254, 176, 33);
   color: white;
 }
 .mainContainer .menuContainer {
@@ -49,7 +51,7 @@
   height: 30%;
 }
 .mainContainer .menuContainer .item .image {
-  width: 50%;
+  width: 39%;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -67,6 +69,9 @@
 .mainContainer .menuContainer .item .text .price {
   display: flex;
   justify-content: space-between;
+}
+.mainContainer .menuContainer .item .text .price .thePrice {
+  color: rgb(254, 176, 33);
 }
 .mainContainer .menuContainer .item .text .description {
   margin-top: 20px;
