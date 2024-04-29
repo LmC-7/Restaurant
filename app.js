@@ -95,7 +95,7 @@ const menu = [
     title: "Club Sandwich",
     category: "Lunch",
     price: "$12.99",
-    img: "./images/Homemade-Beef-Burgers-4.webp",
+    img: "./images/ClubSan.jpg",
     description:
       "Triple-decker sandwich with turkey, bacon, lettuce, and tomato",
   },
