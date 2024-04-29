@@ -170,11 +170,48 @@ const menu = [
   },
 ];
 
+//SELECTOR
+
 const menuContainer = document.querySelector(".menuContainer");
-const filterbtns = document.querySelectorAll(".filter-btn");
+const filterBtns = document.querySelectorAll(".filter-btn");
+const container = document.querySelector(".buttons");
+//EVENT LISTNER
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+  const categories = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+
+      return values;
+    },
+    ["All"]
+  );
+  const categoryBtns = categories
+    .map(function (category) {
+      return `<button class="filter-btn" type="button" data-id=${category}>${category} </button>`;
+    })
+    .join("");
+  container.innerHTML = categoryBtns;
 });
+
+//FILTER ITEMS
+
+filterBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter(function (menuItem) {
+      if (menuItem.category === category) {
+        return menuItem;
+      }
+    });
+    if (category === "all") displayMenuItems(menu);
+    else displayMenuItems(menuCategory);
+  });
+});
+
+//DISPLAY MENU
 
 const displayMenuItems = (menuItem) => {
   let displayMenu = menuItem.map((item) => {
