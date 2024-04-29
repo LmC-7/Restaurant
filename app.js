@@ -1,12 +1,12 @@
 const menu = [
-  {
-    id: 1,
-    title: "Buttermilk  Pancakes",
-    category: "Breakfast",
-    price: "$15.99",
-    img: "./images/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
-    description: "Fluffy pancakes served with maple syrup and butter",
-  },
+  // {
+  //   id: 1,
+  //   title: "Buttermilk  Pancakes",
+  //   category: "Breakfast",
+  //   price: "$15.99",
+  //   img: "./images/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
+  //   description: "Fluffy pancakes served with maple syrup and butter",
+  // },
   {
     id: 2,
     title: "Eggs Benedict",
@@ -186,7 +186,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 const displayMenuItems = (menuItem) => {
   let displayMenu = menuItem.map((item) => {
-    return `<div class="item">
+    return `<div class="item" id="itemId">
     <div class="image">
     <img src=${item.img}   alt="${item.title}  " />
     </div>
