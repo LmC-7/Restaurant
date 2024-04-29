@@ -173,11 +173,42 @@ const menu = [
 //SELECTOR
 
 const menuContainer = document.querySelector(".menuContainer");
-const filterBtns = document.querySelectorAll(".filter-btn");
 const container = document.querySelector(".buttons");
 //EVENT LISTNER
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+  menuButtons();
+});
+
+//FILTER ITEMS
+
+//DISPLAY MENU
+
+const displayMenuItems = (menuItem) => {
+  let displayMenu = menuItem.map((item) => {
+    return `<div class="item">
+    <div class="image">
+    <img src=${item.img}   alt="${item.title}  " />
+    </div>
+    <div class="text">
+    <div class="price">
+        <h3> ${item.title} </h3>
+        <h4 class="thePrice"> ${item.price} </h4>
+      </div>
+     <hr class="ligne">
+      <div class="description">
+        <p>
+         ${item.description}
+        </p>
+      </div>
+    </div>
+  </div>`;
+  });
+  displayMenu = displayMenu.join("");
+  menuContainer.innerHTML = displayMenu;
+};
+
+const menuButtons = () => {
   const categories = menu.reduce(
     function (values, item) {
       if (!values.includes(item.category)) {
@@ -194,45 +225,18 @@ window.addEventListener("DOMContentLoaded", function () {
     })
     .join("");
   container.innerHTML = categoryBtns;
-});
+  const filterBtns = document.querySelectorAll(".filter-btn");
 
-//FILTER ITEMS
-
-filterBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const category = e.currentTarget.dataset.id;
-    const menuCategory = menu.filter(function (menuItem) {
-      if (menuItem.category === category) {
-        return menuItem;
-      }
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = menu.filter(function (menuItem) {
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      if (category === "All") displayMenuItems(menu);
+      else displayMenuItems(menuCategory);
     });
-    if (category === "all") displayMenuItems(menu);
-    else displayMenuItems(menuCategory);
   });
-});
-
-//DISPLAY MENU
-
-const displayMenuItems = (menuItem) => {
-  let displayMenu = menuItem.map((item) => {
-    return `<div class="item">
-    <div class="image">
-      <img src=${item.img}   alt="${item.title}  " />
-    </div>
-    <div class="text">
-      <div class="price">
-        <h3> ${item.title} </h3>
-        <h4 class="thePrice"> ${item.price} </h4>
-      </div>
-     <hr class="ligne">
-      <div class="description">
-        <p>
-         ${item.description}
-        </p>
-      </div>
-    </div>
-  </div>`;
-  });
-  displayMenu = displayMenu.join("");
-  menuContainer.innerHTML = displayMenu;
 };
