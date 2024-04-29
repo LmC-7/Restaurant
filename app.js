@@ -171,16 +171,20 @@ const menu = [
 ];
 
 const menuContainer = document.querySelector(".menuContainer");
-
+const filterbtns = document.querySelectorAll(".filter-btn");
 window.addEventListener("DOMContentLoaded", function () {
-  let displayMenu = menu.map((item) => {
+  displayMenuItems(menu);
+});
+
+const displayMenuItems = (menuItem) => {
+  let displayMenu = menuItem.map((item) => {
     return `<div class="item">
     <div class="image">
       <img src=${item.img}   alt="${item.title}  " />
     </div>
     <div class="text">
       <div class="price">
-        <h4> ${item.title} </h4>
+        <h3> ${item.title} </h3>
         <h4 class="thePrice"> ${item.price} </h4>
       </div>
      <hr class="ligne">
@@ -194,4 +198,4 @@ window.addEventListener("DOMContentLoaded", function () {
   });
   displayMenu = displayMenu.join("");
   menuContainer.innerHTML = displayMenu;
-});
+};

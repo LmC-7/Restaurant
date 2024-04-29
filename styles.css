@@ -58,7 +58,7 @@
 }
 .mainContainer .menuContainer .item .image img {
   width: 100%;
-  height: 100%;
+  border-radius: 10px;
 }
 .mainContainer .menuContainer .item .text {
   margin-left: 10px;
@@ -73,7 +73,23 @@
 .mainContainer .menuContainer .item .text .price .thePrice {
   color: rgb(254, 176, 33);
 }
+.mainContainer .menuContainer .item .text .price h3 {
+  color: rgba(0, 0, 0, 0.509);
+}
 .mainContainer .menuContainer .item .text .description {
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.532);
+}
+
+@media (max-width: 500px) {
+  .menuContainer {
+    flex-wrap: nowrap;
+    background-color: red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuContainer .item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
